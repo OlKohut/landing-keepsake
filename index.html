@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Keepsake — a digital &amp; branding agency</title>
+  <meta name="description" content="Keepsake is a digital and branding agency.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Open+Sans:wght@300;400;700&family=Oswald:wght@300;400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body id="top">
+  <a class="skip" href="#main">Skip to content</a>
+
+  <!-- ===== Header (mobile menu works without JS: checkbox hack) ===== -->
+  <header class="header">
+    <input class="menu-toggle" type="checkbox" id="menu-toggle" aria-label="Open menu">
+    <div class="container header__inner">
+      <a class="logo" href="#top" aria-label="Keepsake home">
+        <span class="logo__k">K</span><span class="logo__text">keepsake</span>
+      </a>
+
+      <label class="burger" for="menu-toggle" aria-hidden="true">
+        <svg class="burger__open" width="20" height="20" viewBox="0 0 20 20"><path d="M2 5h16M2 10h16M2 15h16" stroke="currentColor" stroke-width="2" fill="none"/></svg>
+        <svg class="burger__close" width="20" height="20" viewBox="0 0 20 20"><path d="M4 4l12 12M16 4L4 16" stroke="currentColor" stroke-width="2" fill="none"/></svg>
+      </label>
+
+      <nav class="nav" aria-label="Main">
+        <ul class="nav__list">
+          <li><a class="nav__link is-active" href="#top">Home</a></li>
+          <li><a class="nav__link" href="#services">About us</a></li>
+          <li><a class="nav__link" href="#works">Our works</a></li>
+          <li><a class="nav__link" href="#journal">Journal</a></li>
+          <li><a class="nav__link" href="#contact">Contact</a></li>
+        </ul>
+
+        <div class="nav__extra">
+          <a class="btn" href="#contact">Contact us</a>
+          <a class="btn btn--ghost" href="#">Favourites</a>
+          <address class="nav__contacts">
+            <a href="mailto:hello@keepsake.com">hello@keepsake.com</a>
+            <a href="tel:+380000000000">+38 000 000 00 00</a>
+          </address>
+          <ul class="socials">
+            <li><a href="#" aria-label="Facebook">f</a></li>
+            <li><a href="#" aria-label="Twitter">t</a></li>
+            <li><a href="#" aria-label="Instagram">in</a></li>
+            <li><a href="#" aria-label="Dribbble">dr</a></li>
+          </ul>
+        </div>
+      </nav>
+
+      <a class="fav" href="#" aria-label="Favourites">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 21s-8-5.4-8-11a4.5 4.5 0 0 1 8-2.8A4.5 4.5 0 0 1 20 10c0 5.6-8 11-8 11z"/></svg>
+      </a>
+    </div>
+  </header>
+
+  <main id="main">
+    <!-- ===== Hero ===== -->
+    <section class="hero">
+      <div class="container">
+        <h1 class="hero__title">We're Keepsake, a digital &amp; branding agency</h1>
+        <p class="hero__text">We create memorable brands, websites and print materials that people keep and love.</p>
+        <div class="hero__buttons">
+          <a class="btn" href="#works">See our works</a>
+          <a class="btn btn--ghost" href="#contact">Get in touch</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== Works ===== -->
+    <section class="section works" id="works">
+      <div class="container">
+        <h2 class="title">Our awesome works</h2>
+
+        <input class="sr" type="radio" name="filter" id="f-all" checked>
+        <input class="sr" type="radio" name="filter" id="f-branding">
+        <input class="sr" type="radio" name="filter" id="f-identity">
+        <input class="sr" type="radio" name="filter" id="f-print">
+        <input class="sr" type="radio" name="filter" id="f-web">
+        <input class="sr" type="radio" name="filter" id="f-motion">
+
+        <div class="chips">
+          <label class="chip" for="f-all">All</label>
+          <label class="chip" for="f-branding">Branding</label>
+          <label class="chip" for="f-identity">Identity</label>
+          <label class="chip" for="f-print">Print</label>
+          <label class="chip" for="f-web">Web</label>
+          <label class="chip" for="f-motion">Motion</label>
+        </div>
+
+        <ul class="grid">
+          <li data-category="print"><a class="card c1" href="#"><span class="card__art">Tea &amp; Co</span><span class="card__over"><span class="plus">+</span><span class="card__name">Tea &amp; Co</span><span class="card__line"></span><span class="card__cat">Print</span></span></a></li>
+          <li data-category="print"><a class="card c2" href="#"><span class="card__art">PiecePaper</span><span class="card__over"><span class="plus">+</span><span class="card__name">Piece Paper</span><span class="card__line"></span><span class="card__cat">Print</span></span></a></li>
+          <li data-category="motion"><a class="card c3" href="#"><span class="card__art">Vinyl</span><span class="card__over"><span class="plus">+</span><span class="card__name">Vinyl Cover</span><span class="card__line"></span><span class="card__cat">Motion</span></span></a></li>
+          <li data-category="identity"><a class="card c4" href="#"><span class="card__art">Vol. 19</span><span class="card__over"><span class="plus">+</span><span class="card__name">Volume 19</span><span class="card__line"></span><span class="card__cat">Identity</span></span></a></li>
+          <li data-category="branding"><a class="card c5" href="#"><span class="card__art">Mark</span><span class="card__over"><span class="plus">+</span><span class="card__name">Mark Studio</span><span class="card__line"></span><span class="card__cat">Branding</span></span></a></li>
+          <li data-category="web"><a class="card c6" href="#"><span class="card__art">Paper</span><span class="card__over"><span class="plus">+</span><span class="card__name">Paper Web</span><span class="card__line"></span><span class="card__cat">Web</span></span></a></li>
+          <li data-category="identity"><a class="card c7" href="#"><span class="card__art">Wall St.</span><span class="card__over"><span class="plus">+</span><span class="card__name">Wall St.</span><span class="card__line"></span><span class="card__cat">Identity</span></span></a></li>
+          <li data-category="branding"><a class="card c8" href="#"><span class="card__art">Cona Cut</span><span class="card__over"><span class="plus">+</span><span class="card__name">Cona Cut</span><span class="card__line"></span><span class="card__cat">Branding</span></span></a></li>
+          <li data-category="web"><a class="card c9" href="#"><span class="card__art">Seal Fabric</span><span class="card__over"><span class="plus">+</span><span class="card__name">Seal Fabric</span><span class="card__line"></span><span class="card__cat">Web</span></span></a></li>
+        </ul>
+
+        <a class="btn btn--ghost btn--center" href="#">Load more works</a>
+      </div>
+    </section>
+
+    <!-- ===== CTA ===== -->
+    <section class="cta" id="contact">
+      <div class="container">
+        <h2 class="cta__title">Would you love to work with us?</h2>
+        <a class="btn" href="mailto:hello@keepsake.com">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="3" y="5" width="18" height="14"/><path d="M3 6l9 7 9-7"/></svg>
+          Contact us
+        </a>
+      </div>
+    </section>
+
+    <!-- ===== Services ===== -->
+    <section class="section" id="services">
+      <div class="container">
+        <h2 class="title">What do we do</h2>
+        <ul class="services">
+          <li class="service">
+            <span class="service__icon"><svg width="40" height="40" viewBox="0 0 40 40" fill="none" stroke="#2cd5c4" stroke-width="2" aria-hidden="true"><rect x="6" y="9" width="28" height="19"/><path d="M14 33h12M20 28v5"/></svg></span>
+            <h3 class="service__name">Web design</h3>
+            <p>Clean, fast and responsive websites that tell your story.</p>
+          </li>
+          <li class="service">
+            <span class="service__icon"><svg width="40" height="40" viewBox="0 0 40 40" fill="none" stroke="#2cd5c4" stroke-width="2" aria-hidden="true"><rect x="9" y="5" width="22" height="30" rx="3"/><path d="M18 30h4"/></svg></span>
+            <h3 class="service__name">Mobile apps</h3>
+            <p>Simple and useful interfaces for iOS and Android.</p>
+          </li>
+          <li class="service">
+            <span class="service__icon"><svg width="40" height="40" viewBox="0 0 40 40" fill="none" stroke="#f95858" stroke-width="2" aria-hidden="true"><path d="M7 30l8-12 7 8 4-5 7 9z"/><circle cx="28" cy="11" r="3"/></svg></span>
+            <h3 class="service__name">Photography</h3>
+            <p>Photo and video content with its own recognisable style.</p>
+          </li>
+          <li class="service">
+            <span class="service__icon"><svg width="40" height="40" viewBox="0 0 40 40" fill="#f95858" aria-hidden="true"><path d="M20 34s-13-8.5-13-18a7 7 0 0 1 13-3.5A7 7 0 0 1 33 16c0 9.500-13 18-13 18z"/></svg></span>
+            <h3 class="service__name">Branding</h3>
+            <p>Logos and identities that people remember and love.</p>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- ===== Stats ===== -->
+    <section class="stats-wrap" aria-label="Statistics">
+      <div class="container">
+        <ul class="stats">
+          <li><span class="stats__num">120+</span><span class="stats__label">Projects</span></li>
+          <li><span class="stats__num">8</span><span class="stats__label">Awards</span></li>
+          <li><span class="stats__num">64</span><span class="stats__label">Clients</span></li>
+          <li><span class="stats__num">15</span><span class="stats__label">Team members</span></li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- ===== Clients ===== -->
+    <section class="section" id="clients">
+      <div class="container">
+        <h2 class="title">Clients &amp; kind words</h2>
+        <ul class="clients">
+          <li>Wallpaper</li><li>Lorem</li><li>Ipsum</li><li>Dolor</li><li>Sit amet</li><li>Consect</li>
+        </ul>
+
+        <figure class="review">
+          <svg class="review__quote" width="40" height="32" viewBox="0 0 40 32" fill="#f95858" aria-hidden="true"><path d="M0 32V16C0 6 5 1 15 0v6c-5 1-7 4-7 8h7v18zm22 0V16c0-10 5-15 15-16v6c-5 1-7 4-7 8h7v18z"/></svg>
+          <blockquote class="review__text">Keepsake turned our idea into a brand people actually talk about. Fast, creative and a real pleasure to work with.</blockquote>
+          <figcaption class="review__author">
+            <span class="avatar" aria-hidden="true">AB</span>
+            <span><b class="review__name">Anna Brown</b><br><span class="review__job">CEO, Wallpaper</span></span>
+          </figcaption>
+          <div class="dots" aria-hidden="true"><span class="dot dot--on"></span><span class="dot"></span><span class="dot"></span></div>
+        </figure>
+      </div>
+    </section>
+
+    <!-- ===== Journal ===== -->
+    <section class="section journal" id="journal">
+      <div class="container">
+        <h2 class="title">From the journal</h2>
+        <ul class="posts">
+          <li><article class="post"><span class="post__img p1"></span><div><p class="post__meta">12 May 2026 / Design</p><h3 class="post__title">Ten things I wish I knew about branding</h3><p>A short list of lessons from our latest projects.</p><a class="link" href="#">Read more</a></div></article></li>
+          <li><article class="post"><span class="post__img p2"></span><div><p class="post__meta">03 May 2026 / Print</p><h3 class="post__title">Why paper still matters</h3><p>Print is not dead. Here is how we use it today.</p><a class="link" href="#">Read more</a></div></article></li>
+          <li><article class="post"><span class="post__img p3"></span><div><p class="post__meta">21 Apr 2026 / Web</p><h3 class="post__title">A simple guide to responsive layouts</h3><p>Flexbox and Grid make life much easier.</p><a class="link" href="#">Read more</a></div></article></li>
+          <li><article class="post"><span class="post__img p4"></span><div><p class="post__meta">09 Apr 2026 / Studio</p><h3 class="post__title">A day in the Keepsake studio</h3><p>Coffee, sketches and a lot of good music.</p><a class="link" href="#">Read more</a></div></article></li>
+        </ul>
+      </div>
+    </section>
+  </main>
+
+  <!-- ===== Footer ===== -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__top">
+        <form class="subscribe" id="subscribe" novalidate>
+          <h2 class="subscribe__title">Subscribe</h2>
+          <div class="subscribe__fields">
+            <div class="subscribe__row">
+              <label class="sr" for="email">Email</label>
+              <input class="input" type="email" id="email" name="email" placeholder="Your email" required aria-describedby="email-error">
+              <button class="btn" type="submit">Subscribe</button>
+            </div>
+            <p class="error" id="email-error">Please enter a valid email.</p>
+            <label class="agree">
+              <input type="checkbox" id="agree" required aria-describedby="agree-error">
+              I agree to receive news
+            </label>
+            <p class="error" id="agree-error">Please accept the agreement.</p>
+          </div>
+          <p class="success" id="success" hidden>Thank you! You are subscribed.</p>
+        </form>
+
+        <div class="footer__links">
+          <div>
+            <h2 class="footer__title">Studio</h2>
+            <ul><li><a href="#">About</a></li><li><a href="#">Team</a></li><li><a href="#">Careers</a></li><li><a href="#">Contact</a></li></ul>
+          </div>
+          <div>
+            <h2 class="footer__title">Services</h2>
+            <ul><li><a href="#">Branding</a></li><li><a href="#">Web design</a></li><li><a href="#">Print</a></li><li><a href="#">Motion</a></li></ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer__bottom">
+        <p class="copy">© 2026 Keepsake. All rights reserved.</p>
+        <ul class="socials">
+          <li><a href="#" aria-label="Facebook">f</a></li>
+          <li><a href="#" aria-label="Twitter">t</a></li>
+          <li><a href="#" aria-label="Instagram">in</a></li>
+          <li><a href="#" aria-label="Dribbble">dr</a></li>
+        </ul>
+      </div>
+    </div>
+  </footer>
+
+  <a class="up" href="#top" aria-label="Back to top">
+    <svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 10l5-5 5 5"/></svg>
+  </a>
+
+  <script>
+    // Subscribe form: show success message (no real sending)
+    var form = document.getElementById('subscribe');
+    form.addEventListener('submit', function (e) {
+      e.preventDefault();
+      form.classList.add('was-submitted');
+      if (form.checkValidity()) {
+        form.querySelector('.subscribe__fields').hidden = true;
+        document.getElementById('success').hidden = false;
+      }
+    });
+  </script>
+</body>
+</html>
